@@ -51,8 +51,8 @@
   <g transform="translate(382, 118)">
     <circle cx="0" cy="0" r="41.0" stroke="#21262d" stroke-width="7" fill="none"/>
     <circle cx="0" cy="0" r="41.0" stroke="url(#ring-dark)" stroke-width="7" fill="none"
-            stroke-linecap="round" stroke-dasharray="165.28 257.61" transform="rotate(-90)"/>
-    <text x="0" y="3" text-anchor="middle" class="ring-num">103</text>
+            stroke-linecap="round" stroke-dasharray="165.89 257.61" transform="rotate(-90)"/>
+    <text x="0" y="3" text-anchor="middle" class="ring-num">105</text>
     <text x="0" y="19" text-anchor="middle" class="ring-sub">CONTRIBS</text>
   </g>
 </svg>
