@@ -1,12 +1,13 @@
 ## Hi, I'm Omar Yiğitcan Mengü
 
-I'm an **Anti-Cheat & Kernel-Level Developer** focused on low-level systems programming, operating system internals, and digital forensics. I work close to the metal—analyzing how kernels, binaries, and protocols behave under the hood, building protection and detection mechanisms, and contributing upstream to open-source projects including the **Linux Kernel (`kernel.org`)**, **FreeDOS Kernel (`FDOS/kernel`)**, and **Grim Anti-Cheat (`GrimAnticheat/Grim`)**.
+I'm an **Anti-Cheat & Kernel-Level Developer** focused on low-level systems programming, operating system internals, and digital forensics. I work close to the metal—analyzing how kernels, binaries, and protocols behave under the hood, building protection and detection mechanisms, and contributing upstream to open-source projects including the **Linux Kernel (`kernel.org`)**, **curl (`curl/curl`)**, **FreeDOS Kernel (`FDOS/kernel`)**, and **Grim Anti-Cheat (`GrimAnticheat/Grim`)**.
 
 ---
 
 ### Open-Source Contributions
 
 - **Linux Kernel (`kernel.org`)** — Fixed a 64-bit integer overflow (`U64_MAX + 1` → `ZERO_SIZE_PTR` dereference) in `fs/jfs` `dbDiscardAG()` with `dbMount()` validation ([patch](https://lore.kernel.org/r/20261122-jfs-fix-dbdiscardag-overflow-v1-1-c3b3230242dc@gmail.com)) and removed dead code in `staging/most/dim2` ([patch](https://lore.kernel.org/r/20261122-dim2-remove-unused-sysfs-h-v1-1-369ee2d0e438@gmail.com)).
+- **curl (`curl/curl`)** — Restricted `--remote-time` (`-R`) timestamp updates in `post_close_output()` to files opened by the transfer, with regression tests ([PR #24133](https://github.com/curl/curl/pull/24133)).
 - **FreeDOS Kernel (`FDOS/kernel`)** — Fixed `DosForceDup()` (`INT 21h/AH=46h`) out-of-bounds JFT access and `dup2(h, h)` handle corruption ([PR #279](https://github.com/FDOS/kernel/pull/279)).
 - **Grim Anti-Cheat (`GrimAnticheat/Grim`)** — Replaced the legacy 15ms heuristic with deterministic `CLIENT_TICK_END` tick boundaries for queued block places/breaks ([PR #3041](https://github.com/GrimAnticheat/Grim/pull/3041)).
 
