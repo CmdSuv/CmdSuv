@@ -6,12 +6,9 @@ I'm an **Anti-Cheat & Kernel-Level Developer** focused on low-level systems prog
 
 ### Open-Source Contributions
 
-| Project | Area | Summary | Link |
-|---|---|---|---|
-| **Linux Kernel** | `fs/jfs` (Kernel / C) | Fixed 64-bit integer overflow (`U64_MAX + 1` → `ZERO_SIZE_PTR` dereference) in `dbDiscardAG()` & added `dn_agfree` validation in `dbMount()` (syzbot, QEMU/KVM + KASAN verified) | [lore.kernel.org](https://lore.kernel.org/r/20261122-jfs-fix-dbdiscardag-overflow-v1-1-c3b3230242dc@gmail.com) |
-| **Linux Kernel** | `staging/most/dim2` (Kernel / C) | Removed dead `sysfs.h` header and unused `struct medialb_bus` field | [lore.kernel.org](https://lore.kernel.org/r/20261122-dim2-remove-unused-sysfs-h-v1-1-369ee2d0e438@gmail.com) |
-| **FreeDOS Kernel** | `INT 21h/AH=46h` (16-bit OS / C & x86 ASM) | Fixed `DosForceDup()` OOB JFT access and `dup2(h, h)` handle corruption (`#261`, verified with custom 16-bit x86 NASM test suite in QEMU) | [FDOS/kernel#279](https://github.com/FDOS/kernel/pull/279) |
-| **Grim Anti-Cheat** | Packet Engine (Java) | Replaced legacy 15ms heuristic with deterministic `CLIENT_TICK_END` boundaries for queued block places/breaks, plus teleport & cross-queue look isolation (`#2920`) | [GrimAnticheat/Grim#3041](https://github.com/GrimAnticheat/Grim/pull/3041) |
+- **Linux Kernel (`kernel.org`)** — Fixed a 64-bit integer overflow (`U64_MAX + 1` → `ZERO_SIZE_PTR` dereference) in `fs/jfs` `dbDiscardAG()` with `dbMount()` validation ([patch](https://lore.kernel.org/r/20261122-jfs-fix-dbdiscardag-overflow-v1-1-c3b3230242dc@gmail.com)) and removed dead code in `staging/most/dim2` ([patch](https://lore.kernel.org/r/20261122-dim2-remove-unused-sysfs-h-v1-1-369ee2d0e438@gmail.com)).
+- **FreeDOS Kernel (`FDOS/kernel`)** — Fixed `DosForceDup()` (`INT 21h/AH=46h`) out-of-bounds JFT access and `dup2(h, h)` handle corruption ([PR #279](https://github.com/FDOS/kernel/pull/279)).
+- **Grim Anti-Cheat (`GrimAnticheat/Grim`)** — Replaced the legacy 15ms heuristic with deterministic `CLIENT_TICK_END` tick boundaries for queued block places/breaks ([PR #3041](https://github.com/GrimAnticheat/Grim/pull/3041)).
 
 ---
 
