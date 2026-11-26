@@ -31,17 +31,17 @@
   <g transform="translate(24, 95)">
     <circle cx="5" cy="-4" r="4.5" fill="#3572A5"/>
     <text x="16" y="0" class="lang-name">Python</text>
-    <text x="142" y="0" text-anchor="end" class="lang-pct">48.8%</text>
+    <text x="142" y="0" text-anchor="end" class="lang-pct">48.7%</text>
   </g>
   <g transform="translate(182, 95)">
     <circle cx="5" cy="-4" r="4.5" fill="#f34b7d"/>
     <text x="16" y="0" class="lang-name">C++</text>
-    <text x="142" y="0" text-anchor="end" class="lang-pct">42.9%</text>
+    <text x="142" y="0" text-anchor="end" class="lang-pct">42.8%</text>
   </g>
   <g transform="translate(24, 119)">
     <circle cx="5" cy="-4" r="4.5" fill="#555555"/>
     <text x="16" y="0" class="lang-name">C</text>
-    <text x="142" y="0" text-anchor="end" class="lang-pct">4.2%</text>
+    <text x="142" y="0" text-anchor="end" class="lang-pct">4.1%</text>
   </g>
   <g transform="translate(182, 119)">
     <circle cx="5" cy="-4" r="4.5" fill="#6E4C13"/>
